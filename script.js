@@ -10,13 +10,6 @@ function random(max){
     return num;
 }
 
-function generar(){
-
-    document.write("<h1> OMG! you will not believe me but...</h1>");
-
-    document.write("<h1 id='excuse'>"+frase.who[random(frase.who.length)]+" ");
-    document.write(frase.what[random(frase.what.length)]+" ");
-    document.write(frase.object[random(frase.object.length)]+" ");
-    document.write(frase.when[random(frase.when.length)]+"</h1>");
+window.onload=function (){
+document.querySelector('#excuse').innerHTML= frase.who[random(frase.who.length)]+" "+ frase.what[random(frase.what.length)]+" "+frase.object[random(frase.object.length)]+" "+frase.when[random(frase.when.length)];
 }
-
